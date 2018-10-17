@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This sets the background colour, font colour, font style (weight and size). 
+- The font-family picks 'lato' first and if the website is unable to load that font style then it goes to Arial and then san-serif as our default.
+- Because this is common amonst all field we will declare it in here and anything specific can be delcayred/set later on.
+- The 'optimizeLegibility' emphasizes legibility over rendering speed and geometric precision. */
+html {
+    background colour: #8d8d8d;
+    color: #000000;
+    font-family: 'lato', 'Arial', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
