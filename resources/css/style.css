@@ -21,34 +21,81 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
-    
+
+section {
+    padding: 80px 0;
+}
+
+.section-benefits-of-signing-up{
+    background-color: #ebebeb;
+}
+.box{
+    padding: 1%;
+}
 /*====================================================================================================*/
 /*=========================================  HEADER  =================================================*/
 /*====================================================================================================*/
-
-header {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.5)), url(img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* This makes the image fill up the view, aka full screen */
-}
 
 .hero-text-box{
     position: absolute;
     width: 1140px;
     top: 60%;
-    left: 55%;
+    left: 57%;
 }
 
-h1 {
-    margin: 0;
-    color: aliceblue;
-    font-size: 300%;
+h1,
+h2,
+h3 {
+    
     font-weight: 300;
     letter-spacing: 1px;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: aliceblue;
+    font-size: 300%;
     word-spacing: 2px;
 }
 
+h2{
+    text-transform: uppercase;
+    font-size: 200%;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+h2:after { /*This is the line under h2 */
+    display: block;
+    height: 2px;
+    background-color: #000;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.explanation {
+    line-height: 140%;
+    width: 70%;
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+.box p {
+    line-height: 145%;
+    font-size: 90%;
+    letter-spacing: 1px;
+}
 .logo {
     height: 100px;
     width: auto;
@@ -80,6 +127,86 @@ h1 {
     
     border-bottom: 3px solid #fff;
 }
+ /* ------- FEEDBACK SECTION ------- */
+blockquote{
+    font-style: italic;
+    line-height: 145%;
+    padding: 2%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+/* -------- FOOTER SECTION ------- */
+
+footer {
+    background-color: #34add1;
+}
+
+.footer-nav {
+    list-style:none;
+    float: left;
+    text-decoration: none;
+    border:0;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited,{
+    text-decoration: none;
+    border: 0;
+    caption-side: #888;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* ----------- ICONS --------------*/
+.social-links ion-icon {
+    font-size: 32px;
+    display: inline-block;
+}
+
+.section-How-it-works ion-icon,
+.section-benefits-of-signing-up ion-icon{
+    font-size: 128px;
+    color:#00b2c1;
+    width: 60%;
+    margin-left: 20%;
+    display: block;
+}
+
+
 /*====================================================================================================*/
 /*=========================================  BUTTONS  ================================================*/
 /*====================================================================================================*/
@@ -108,3 +235,38 @@ h1 {
     border: 1px solid #fff;
     color: #000;
 }
+
+
+/*====================================================================================================*/
+/*=========================================  IMAGES  ================================================*/
+/*====================================================================================================*/
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.5)), url(img/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* This makes the image fill up the view, aka full screen */
+    background-attachment: fixed;
+}
+
+
+.image a img {
+    width: 100%;
+    height: auto;
+}
+
+.section-feedback {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/background1.jpeg);
+    background-size: cover;
+    color: aliceblue;
+    background-attachment: fixed;
+}
+
+cite img {
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
